@@ -1,0 +1,101 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style type="text/css">
+
+.testimonial {
+    position: relative;
+    width: 500px;
+    margin: 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 4px;
+    text-align: left;
+    overflow: hidden;
+    color: black;
+
+}
+
+.testimonial .card-left {
+    float: left;
+}
+
+.testimonial .card-right {
+    margin-bottom: 10px;
+    /* margin-left: 140px; */
+}
+
+.headshot {
+    margin: 20px;
+}
+
+.headshot img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+.headshot img .content{
+    margin: 0;
+}
+
+.testimonial-title {
+    margin: 0;
+}
+
+</style>
+
+<h3>Testimonial prototype</h3>
+
+
+<div class="testimonial">
+    <div class="card-left">
+        <div class="headshot">
+[[{"fid":"2161","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"24":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":300,"width":300,"class":"media-element file-default","data-delta":"24"}}]]
+        </div>
+    </div>
+    <div class="card-right">
+        <h3 class="testimonial-name">
+            Evietta	Chapman
+        </h3>
+        <div class="testimonial-major">
+            Business 2017-2021
+        </div>
+        <h5 class="testimonial-title">
+            Design Intern
+        </h5>
+        <div class="testimonial-years">
+            2019-2021
+        </div>
+    </div>
+</div>
+
+
+
+<div class="testimonial">
+    <div class="card-left">
+        <div class="headshot">
+[[{"fid":"2161","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"24":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":300,"width":300,"class":"media-element file-default","data-delta":"24"}}]]
+        </div>
+    </div>
+    <div class="card-right">
+        <h3 class="testimonial-name">
+            Evietta	Chapman
+        </h3>
+        <div class="testimonial-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+
+$(document).ready(function() {
+	// Move the slide img elements out of their Drupal containers to simplify styling
+	$(".testimonial .headshot img").each(function(){
+		var parent = $(this).closest(".headshot");
+		parent.append($(this));
+	});
+
+	$(".headshot .media").remove();
+});
+</script>
