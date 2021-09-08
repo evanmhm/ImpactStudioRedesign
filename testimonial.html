@@ -2,7 +2,13 @@
 
 <style type="text/css">
 
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
 .testimonial {
+    grid-column: span 6;
     position: relative;
     width: 500px;
     margin: 20px 20px;
@@ -12,7 +18,12 @@
     text-align: left;
     overflow: hidden;
     color: black;
+}
 
+@media only screen and (max-width: 1100px) {
+	.testimonial {
+	    grid-column: span 12;
+	}
 }
 
 .testimonial .card-left {
@@ -24,17 +35,17 @@
     /* margin-left: 140px; */
 }
 
-.testimonial .headshot {
+.testimonial .testimonial-headshot {
     margin: 20px 20px 0;
 }
 
-.testimonial .headshot img {
+.testimonial .testimonial-headshot img {
     width: 120px;
     height: 120px;
     border-radius: 100%;
 }
 
-.headshot img .content{
+.testimonial-headshot img .content{
     margin: 0;
 }
 
@@ -53,12 +64,15 @@
 
 </style>
 
-<h3>Testimonial prototype</h3>
+<p style="font-size: 0;border-bottom: 3px solid rgb(0, 59, 92);/* padding-bottom: 30px; */text-align: center;">
+	&nbsp;</p>
 
+<h3> Previous Team Testimonials </h3>
+<!--
 
 <div class="testimonial">
     <div class="card-left">
-        <div class="headshot">
+        <div class="testimonial-headshot">
 [[{"fid":"2161","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"24":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":300,"width":300,"class":"media-element file-default","data-delta":"24"}}]]
         </div>
     </div>
@@ -76,31 +90,57 @@
             2019-2021
         </div>
     </div>
-</div>
+</div> -->
 
 
-
-<div class="testimonial">
-    <div class="card-left">
-        <div class="headshot">
-[[{"fid":"2161","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"24":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":300,"width":300,"class":"media-element file-default","data-delta":"24"}}]]
+<div class="grid">
+    <div class="testimonial">
+        <div class="card-left">
+            <div class="testimonial-headshot">
+    [[{"fid":"2161","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"24":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":300,"width":300,"class":"media-element file-default","data-delta":"24"}}]]
+            </div>
+        </div>
+        <div class="card-right">
+            <h3 class="testimonial-name">
+                Evietta	Chapman
+            </h3>
+            <div class="testimonial-major">
+                Business 2017-2021
+            </div>
+            <h5 class="testimonial-title">
+                Design Intern
+            </h5>
+            <div class="testimonial-years">
+                2019-2021
+            </div>
+            <div class="testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
         </div>
     </div>
-    <div class="card-right">
-        <h3 class="testimonial-name">
-            Evietta	Chapman
-        </h3>
-        <div class="testimonial-major">
-            Business 2017-2021
+
+    <div class="testimonial">
+        <div class="card-left">
+            <div class="testimonial-headshot">
+    [[{"fid":"2066","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"144":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":300,"width":300,"class":"media-element file-default","data-delta":"144"}}]]
+            </div>
         </div>
-        <h5 class="testimonial-title">
-            Design Intern
-        </h5>
-        <div class="testimonial-years">
-            2019-2021
-        </div>
-        <div class="testimonial-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="card-right">
+            <h3 class="testimonial-name">
+                Jennifer Rodriguez
+            </h3>
+            <div class="testimonial-major">
+                Major 2017-2021
+            </div>
+            <h5 class="testimonial-title">
+                Design Intern
+            </h5>
+            <div class="testimonial-years">
+                2019-2021
+            </div>
+            <div class="testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
         </div>
     </div>
 </div>
@@ -109,11 +149,11 @@
 
 $(document).ready(function() {
 	// Move the slide img elements out of their Drupal containers to simplify styling
-	$(".testimonial .headshot img").each(function(){
-		var parent = $(this).closest(".headshot");
+	$(".testimonial .testimonial-headshot img").each(function(){
+		var parent = $(this).closest(".testimonial-headshot");
 		parent.append($(this));
 	});
 
-	$(".headshot .media").remove();
+	$(".testimonial-headshot .media").remove();
 });
 </script>
