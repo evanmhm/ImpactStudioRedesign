@@ -18,7 +18,7 @@
         width: 80%;
     }
 
-    @media only screen and (max-width: 550px) {
+    @media only screen and (max-width: 650px) {
     	.profile {
     	    grid-column: span 6;
     	}
@@ -28,7 +28,19 @@
         }
     }
 
+    @media only screen and (max-width: 480px) {
+    	.profile {
+    	    grid-column: span 12;
+    	}
+
+        .headshot {
+            width: 100%;
+        }
+    }
+
     .headshot {
+        max-width: 215px;
+        max-height: 215px;
         width: 60%;
         height: auto;
         margin: auto;
