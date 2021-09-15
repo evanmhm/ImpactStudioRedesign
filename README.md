@@ -1,6 +1,6 @@
 ## Impact Studio redesign
 
-These html files are meant to be copied into the paragraphs in the Drupal editor. Some files are CSS styling wrapped in html tags to be copied into the body section in Drupal pages. See this repository's wiki for more information.
+These html files are meant to be copied into the paragraphs in the Drupal editor. Some files are CSS styling wrapped in html tags to be copied into the body section in Drupal pages. See this [repository's wiki](https://github.com/evanmhm/ImpactStudioRedesign/wiki) for more information.
 
 #### File structure
 
