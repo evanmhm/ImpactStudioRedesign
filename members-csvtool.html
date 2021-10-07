@@ -4,15 +4,16 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        var info = [];
-        var out = $("#infodump");
+        var out = "";
         $(".profile").each(function() {
             var name = $(this).find(".name").text().trim();
             var org = $(this).find(".org-title").text().trim();
             var dept = $(this).find(".dept").text().trim();
-            out.append(name + ", " + org + ", "+ dept + "<br>");
+            // org = org.replaceAll(",", "|");
+            // dept = dept.replaceAll(",", "|");
+            out += (name + "\t" + org + "\t"+ dept + "\n");
         });
-        console.log(info);
+        console.log(out);
     });
 </script>
 <style media="screen">

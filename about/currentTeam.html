@@ -16,26 +16,30 @@
     }
 
     .headshot {
-        width: 80%;
-    }
-
-    @media only screen and (max-width: 550px) {
-    	.profile {
-    	    grid-column: span 6;
-    	}
-
-        .headshot {
-            width: 100%;
-        }
-    }
-
-    .headshot {
+        max-width: 215px;
+        max-height: 215px;
         width: 60%;
         height: auto;
         margin: auto;
         overflow: hidden;
         position: relative;
         margin-bottom: 5px;
+    }
+
+    @media only screen and (max-width: 750px) {
+    	.profile {
+    	    grid-column: span 6;
+    	}
+
+        .headshot {
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media only screen and (max-width: 490px) {
+    	.profile {
+    	    grid-column: span 12;
+    	}
     }
 
     .headshot:after {
