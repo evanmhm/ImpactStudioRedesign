@@ -4,6 +4,23 @@
     Drupal image import queries don't need to be edited, but the styling makes sure they are square.
     Profiles are arranged alphabetically by last name.
 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var out = "";
+        $(".profile").each(function() {
+            var name = $(this).find(".name").text().trim();
+            var org = $(this).find(".org-title").text().trim();
+            var dept = $(this).find(".dept").text().trim();
+            // org = org.replaceAll(",", "|");
+            // dept = dept.replaceAll(",", "|");
+            out += (name + "\t" + org + "\t"+ dept + "\n");
+        });
+        console.log(out);
+    });
+</script>
+
 <style type="text/css">
     .grid {
     	display: grid;
@@ -896,6 +913,22 @@
     </div>
     <div class="profile">
         <div class="headshot">
+            [[{"fid":"3386","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"152":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":400,"width":400,"class":"media-element file-default","data-delta":"152"}}]]
+        </div>
+        <div class="description">
+            <div class="name">
+                Sophie Dziak
+            </div>
+            <div class="org-title">
+                Design Intern
+            </div>
+            <div class="dept">
+                Impact Studio (2021-)
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="headshot">
             [[{"fid":"2341","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"34":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":287,"width":287,"class":"media-element file-default","data-delta":"34"}}]]
         </div>
         <div class="description">
@@ -1085,6 +1118,22 @@
     </div>
     <div class="profile">
         <div class="headshot">
+            [[{"fid":"3411","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"154":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":367,"width":366,"class":"media-element file-default","data-delta":"154"}}]]
+        </div>
+        <div class="description">
+            <div class="name">
+                Matthew Grenz
+            </div>
+            <div class="org-title">
+                Design Intern
+            </div>
+            <div class="dept">
+                Impact Studio (2021-)
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="headshot">
             [[{"fid":"2271","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"56":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":220,"width":220,"class":"media-element file-default","data-delta":"56"}}]]
         </div>
         <div class="description">
@@ -1176,6 +1225,22 @@
             </div>
             <div class="dept">
                 COE, Mechanical Engineering
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="headshot">
+            [[{"fid":"3376","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"150":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"151":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":400,"width":400,"class":"media-element file-default","data-delta":"151"}}]]
+        </div>
+        <div class="description">
+            <div class="name">
+                Evin Holstad
+            </div>
+            <div class="org-title">
+                Design Intern
+            </div>
+            <div class="dept">
+                Impact Studio (2021-)
             </div>
         </div>
     </div>
@@ -1672,6 +1737,22 @@
             </div>
             <div class="dept">
                 INTO OSU
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="headshot">
+            [[{"fid":"3406","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"153":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":400,"width":400,"class":"media-element file-default","data-delta":"153"}}]]
+        </div>
+        <div class="description">
+            <div class="name">
+                Min Seo (David) Park
+            </div>
+            <div class="org-title">
+                Design Intern
+            </div>
+            <div class="dept">
+                Impact Studio (2021-)
             </div>
         </div>
     </div>
