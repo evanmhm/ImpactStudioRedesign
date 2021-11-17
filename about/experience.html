@@ -1,0 +1,107 @@
+<!--
+
+-->
+<style type="text/css">
+.home-grid-container {
+    width: 100%;
+}
+
+.home-grid {
+    max-width: 680px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 1fr;
+    margin: 0 auto;
+}
+
+.experience-card {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    grid-column: span 6;
+
+    margin: 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    color: black;
+}
+
+/* .experience-card:nth-child(n+4) {
+    margin-top: 25px;
+}
+
+.home-grid-2 .experience-card:nth-child(n+3) {
+    margin-top: 25px;
+} */
+
+
+.experience-card-text {
+    text-align: left;
+    padding: 2px 2px;
+    padding-left: 15px;
+}
+
+.experience-card-title {
+    text-align: left;
+    font-family: 'Stratum2Web',sans-serif;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: #d73f09;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 680px) {
+    .home-grid {
+        max-width: 340px;
+    }
+
+    .experience-card {
+        grid-column: span 12;
+    }
+
+}
+</style>
+
+<h3 style="text-align:center;">Experience</h3>
+
+<div class="home-grid-container">
+    <div class="home-grid">
+        <div class="experience-card">
+            <div class="experience-card-title">
+                Space
+            </div>
+            <div class="experience-card-text">
+                Impact Studio is not an ordinary meeting room. High energy, engaging conversations, and rapid fire idea-filled sticky notes are creating new approaches to solve challenging issues. A large jam space provides opportunities for training sessions and seminars.
+            </div>
+        </div>
+        <div class="experience-card">
+            <div class="experience-card-title">
+                Culture
+            </div>
+            <div class="experience-card-text">
+                Oregon State’s reputation for grit, determination, confidence, collaboration, vision, conscientiousness, and inclusion are expectations in full effect in the studio. The rate of learning is off the charts, hierarchy is just another nine letter word, and teams contribute with a sense of urgency.
+            </div>
+        </div>
+        <div class="experience-card">
+            <div class="experience-card-title">
+                Talent
+            </div>
+            <div class="experience-card-text">
+                We’re a magnet for those that thrive on the front end of creating new initiatives. Skilled and experienced teams work in every phase of innovation; delving into uncertainty and building confidence in creating and launching innovative new solutions.
+            </div>
+        </div>
+        <div class="experience-card">
+            <div class="experience-card-title">
+                Partnerships
+            </div>
+            <div class="experience-card-text">
+                Everyone is welcome. Out There and in here, Oregon State is determined to make an impact. We partner with EdTech visionaries and trend watchers to see around the next corner in education. Colleges, division centers, programs, outside organizations, and donors collaboratively identify growth opportunities.
+            </div>
+        </div>
+    </div>
+</div>
