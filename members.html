@@ -4,6 +4,23 @@
     Drupal image import queries don't need to be edited, but the styling makes sure they are square.
     Profiles are arranged alphabetically by last name.
 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var out = "";
+        $(".profile").each(function() {
+            var name = $(this).find(".name").text().trim();
+            var org = $(this).find(".org-title").text().trim();
+            var dept = $(this).find(".dept").text().trim();
+            // org = org.replaceAll(",", "|");
+            // dept = dept.replaceAll(",", "|");
+            out += (name + "\t" + org + "\t"+ dept + "\n");
+        });
+        console.log(out);
+    });
+</script>
+
 <style type="text/css">
     .grid {
     	display: grid;
@@ -104,7 +121,7 @@
                 Charlene Alexander
             </div>
             <div class="org-title">
-                Vice President and Chief Diversity Officer
+                Vice President and Chief Diversity Officer (former)
             </div>
             <div class="dept">
             </div>
@@ -154,7 +171,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2018-2021)
             </div>
         </div>
     </div>
@@ -378,7 +395,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2019-2021)
             </div>
         </div>
     </div>
@@ -391,7 +408,7 @@
                 SueAnn Bottoms
             </div>
             <div class="org-title">
-                Director of Precollege Programs
+                Director of Precollege Programs (retired)
             </div>
             <div class="dept">
                 The SMILE Program
@@ -455,10 +472,10 @@
                 Olivia Burkhart
             </div>
             <div class="org-title">
-                Design Intern (former)
+                Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2018-2021)
             </div>
         </div>
     </div>
@@ -522,7 +539,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2019-2021)
             </div>
         </div>
     </div>
@@ -551,7 +568,7 @@
                 Jim Coakley
             </div>
             <div class="org-title">
-                Interim Dean
+                Senior Associate Dean for Analytics and Operations
             </div>
             <div class="dept">
                 COB
@@ -778,7 +795,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2019-2021)
             </div>
         </div>
     </div>
@@ -891,6 +908,22 @@
             </div>
             <div class="dept">
                 Ecampus
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="headshot">
+            [[{"fid":"3386","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"152":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":400,"width":400,"class":"media-element file-default","data-delta":"152"}}]]
+        </div>
+        <div class="description">
+            <div class="name">
+                Sophie Dziak
+            </div>
+            <div class="org-title">
+                Design Intern
+            </div>
+            <div class="dept">
+                Impact Studio (2021-)
             </div>
         </div>
     </div>
@@ -1044,10 +1077,10 @@
                 Breanna Gollihugh
             </div>
             <div class="org-title">
-                Design Intern (former)
+                Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2018-2020)
             </div>
         </div>
     </div>
@@ -1063,7 +1096,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2021-)
             </div>
         </div>
     </div>
@@ -1080,6 +1113,22 @@
             </div>
             <div class="dept">
                 Finance and Administration
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="headshot">
+            [[{"fid":"3411","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"154":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":367,"width":366,"class":"media-element file-default","data-delta":"154"}}]]
+        </div>
+        <div class="description">
+            <div class="name">
+                Matthew Grenz
+            </div>
+            <div class="org-title">
+                Design Intern
+            </div>
+            <div class="dept">
+                Impact Studio (2021-)
             </div>
         </div>
     </div>
@@ -1181,6 +1230,22 @@
     </div>
     <div class="profile">
         <div class="headshot">
+            [[{"fid":"3376","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"150":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"151":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":400,"width":400,"class":"media-element file-default","data-delta":"151"}}]]
+        </div>
+        <div class="description">
+            <div class="name">
+                Evin Holstad
+            </div>
+            <div class="org-title">
+                Design Intern
+            </div>
+            <div class="dept">
+                Impact Studio (2021-)
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="headshot">
             [[{"fid":"3241","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"143":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":1628,"width":1628,"class":"media-element file-default","data-delta":"143"}}]]
         </div>
         <div class="description">
@@ -1191,7 +1256,7 @@
                 Web Designer
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2021-)
             </div>
         </div>
     </div>
@@ -1220,10 +1285,10 @@
                 Tiger Hu
             </div>
             <div class="org-title">
-                Design Intern (former)
+                Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2019-2021)
             </div>
         </div>
     </div>
@@ -1332,10 +1397,10 @@
                 Ji Kim
             </div>
             <div class="org-title">
-                Design Intern (former)
+                Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2018-2021)
             </div>
         </div>
     </div>
@@ -1399,7 +1464,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2019-2021)
             </div>
         </div>
     </div>
@@ -1508,10 +1573,10 @@
                 Timothy McElroy
             </div>
             <div class="org-title">
-                Design Intern, Human Centered Design Lead (former)
+                Design Intern, Human Centered Design Lead
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2019-2020)
             </div>
         </div>
     </div>
@@ -1677,6 +1742,22 @@
     </div>
     <div class="profile">
         <div class="headshot">
+            [[{"fid":"3406","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"153":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":400,"width":400,"class":"media-element file-default","data-delta":"153"}}]]
+        </div>
+        <div class="description">
+            <div class="name">
+                Min Seo (David) Park
+            </div>
+            <div class="org-title">
+                Design Intern
+            </div>
+            <div class="dept">
+                Impact Studio (2021-)
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <div class="headshot">
             [[{"fid":"2591","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"86":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":398,"width":398,"class":"media-element file-default","data-delta":"86"}}]]
         </div>
         <div class="description">
@@ -1831,7 +1912,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2019-2021)
             </div>
         </div>
     </div>
@@ -1892,7 +1973,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2019-2021)
             </div>
         </div>
     </div>
@@ -2132,7 +2213,7 @@
                 Design Intern
             </div>
             <div class="dept">
-                Impact Studio
+                Impact Studio (2021-)
             </div>
         </div>
     </div>

@@ -11,9 +11,9 @@
             var name = $(this).find(".name").text().trim();
             var org = $(this).find(".org-title").text().trim();
             var dept = $(this).find(".dept").text().trim();
-            org = org.replaceAll(",", "|");
-            dept = dept.replaceAll(",", "|");
-            out += (name + ", " + org + ", "+ dept + "\n");
+            // org = org.replaceAll(",", "|");
+            // dept = dept.replaceAll(",", "|");
+            out += (name + "\t" + org + "\t"+ dept + "\n");
         });
         console.log(out);
     });

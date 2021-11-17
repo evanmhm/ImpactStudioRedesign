@@ -1,10 +1,8 @@
 <!--
-    Meant to be pasted in the body section, styling for the new portfolio page (mainly for home-card grids).
-    Uses a grid with 12 columns and assigns the grid-span on different screen sizes to reduce
-    the amount of home-cards per row.
 -->
 <style type="text/css">
 .home-grid-container {
+    margin-top: -50px;
     width: 100%;
 }
 
@@ -88,8 +86,7 @@
 
 .home-card-text {
     text-align: left;
-    padding: 2px 2px;
-    padding-left: 15px;
+    padding: 2px 15px;
 }
 
 .home-card-title {
@@ -145,7 +142,7 @@
     color: white;
 }
 
-.arrow-holder {
+.tri-arrow-holder {
     display:block;
     width: 53px;
     height: 30px;
@@ -155,7 +152,7 @@
     position: absolute;
 }
 
-.arrow {
+.tri-arrow {
 	/* more triangle */
 	height: 15px; width: 15px;
 	border: 1px solid rgba(215, 63, 9, 0.6);
@@ -164,7 +161,7 @@
     margin: 4px 11px;
 }
 
-.arrow:before, .arrow:after {
+.tri-arrow:before, .tri-arrow:after {
 	content: '';
 	position: absolute;
 	display: block;
@@ -172,7 +169,7 @@
 	border-width: 5px 5px 0 0;
 }
 
-.arrow:before {
+.tri-arrow:before {
 	border: 1px solid rgba(215, 63, 9, 0.3);
 	border-width: 5px 5px 0 0;
 	/* top - distance minus border */
@@ -180,7 +177,7 @@
     left: -12px;
 }
 
-.arrow:after {
+.tri-arrow:after {
 	border: 1px solid rgba(215, 63, 9, 1);
 	border-width: 5px 5px 0 0;
 	/* top - distance plus border */
@@ -188,26 +185,26 @@
     left: 13px;
 }
 
-.home-card:hover .arrow {
+.home-card:hover .tri-arrow {
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-width: 5px 5px 0 0;
 }
 
-.home-card:hover .arrow:before {
+.home-card:hover .tri-arrow:before {
     /* top: 10px; */
     /* left: -14px; */
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-width: 5px 5px 0 0;
 }
 
-.home-card:hover .arrow:after {
+.home-card:hover .tri-arrow:after {
     /* top: -20px; */
     /* left: 14px; */
     border: 1px solid rgba(255, 255, 255, 1);
     border-width: 5px 5px 0 0;
 }
 
-.home-card:hover .arrow-holder {
+.home-card:hover .tri-arrow-holder {
     /* margin: 10px 40px; */
 }
 
@@ -233,206 +230,126 @@
     left: 0;
     z-index: 1;
 }
-
 </style>
-<h3>Home links (3x2), collapses to 2x3 then 1x6 on tablet/mobile</h3>
 
 <div class="home-grid-container">
-    <div class="home-grid">
-        <div class="home-card">
-[[{"fid":"3201","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"31":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"31"}}]]
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    About
+	<div class="home-grid">
+		<div class="home-card">
+			[[{"fid":"3201","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"31":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"31"}}]]
+			<div class="card-gradient"></div>
+			<div class="overlay">
+				<div class="home-card-title">
+					About
                 </div>
-                <div class="home-card-text">
-                    Creative and nimble responses to fast changing trends in higher education
+				<div class="home-card-text">
+					Learn more about who we are.
                 </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-            </div>
-            <a href="/about"><span class="link-overlay"></span></a>
+				<div class="tri-arrow-holder">
+					<div class="tri-arrow">
+						&nbsp;
+                    </div>
+				</div>
+			</div>
+			<a href="/about"><span class="link-overlay"></span></a>
         </div>
-        <div class="home-card">
-[[{"fid":"3206","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"32":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"33":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"33"}}]]
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Portfolio
+
+		<div class="home-card">
+			[[{"fid":"3206","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"33":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"33"}}]]
+			<div class="card-gradient"></div>
+			<div class="overlay">
+				<div class="home-card-title">
+					Portfolio
                 </div>
-                <div class="home-card-text">
-                    Our diverse and high potential initiatives
+				<div class="home-card-text">
+					Our diverse and high growth initiatives.
                 </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-                <a href="/portfolio"><span class="link-overlay"></span></a>
+				<div class="tri-arrow-holder">
+					<div class="tri-arrow">
+						&nbsp;
+                    </div>
+				</div>
+				<a href="/portfolio"><span class="link-overlay"></span></a>
             </div>
-        </div>
-        <div class="home-card">
-[[{"fid":"3306","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"36":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":451,"width":450,"class":"media-element file-default","data-delta":"36"}}]]
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Methodology
+		</div>
+
+		<div class="home-card">
+			[[{"fid":"3306","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"36":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":451,"width":450,"class":"media-element file-default","data-delta":"36"}}]]
+			<div class="card-gradient"></div>
+			<div class="overlay">
+				<div class="home-card-title">
+					Methodology
                 </div>
-                <div class="home-card-text">
-                    Refined. Proven. Tailored in Time and Emphasis.
+				<div class="home-card-text">
+					Refined. Proven. Tailored in time and emphasis.
                 </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-                <a href="/methodology"><span class="link-overlay"></span></a>
+				<div class="tri-arrow-holder">
+					<div class="tri-arrow">
+						&nbsp;
+                    </div>
+				</div>
+				<a href="/methodology"><span class="link-overlay"></span></a>
             </div>
-        </div>
-        <div class="home-card">
-            <img alt="Cyber Security Internet photo" class="media-element file-default" data-delta="20" data-fid="851" data-media-element="1" src="https://impactstudio.oregonstate.edu/sites/impactstudio.oregonstate.edu/files/cyber_security_internet-3589684_1920_v.2_300.jpg" typeof="foaf:Image" />
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Services
+		</div>
+
+		<div class="home-card">
+            [[{"fid":"3396","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"39":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"39"}}]]
+			<div class="card-gradient"></div>
+			<div class="overlay">
+				<div class="home-card-title">
+					Services
                 </div>
-                <div class="home-card-text">
-                    The services we provide to the Oregon State community
+				<div class="home-card-text">
+					The services we provide to the Oregon State community.
                 </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-                <a href="/services"><span class="link-overlay"></span></a>
+				<div class="tri-arrow-holder">
+					<div class="tri-arrow">
+						&nbsp;
+                    </div>
+				</div>
+				<a href="/services"><span class="link-overlay"></span></a>
             </div>
-        </div>
-        <div class="home-card">
-[[{"fid":"3216","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"35":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"35"}}]]
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Innovators
-                </div>
-                <div class="home-card-text">
-                    The many people we work with
-                </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-                <a href="/innovators"><span class="link-overlay"></span></a>
+		</div>
+
+		<div class="home-card">
+			[[{"fid":"3216","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"35":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"35"}}]]
+			<div class="card-gradient">
+				&nbsp;
             </div>
-        </div>
-        <div class="home-card">
-            <img alt="Cyber Security Internet photo" class="media-element file-default" data-delta="20" data-fid="851" data-media-element="1" src="https://impactstudio.oregonstate.edu/sites/impactstudio.oregonstate.edu/files/cyber_security_internet-3589684_1920_v.2_300.jpg" typeof="foaf:Image" />
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Lorem ipsum
+			<div class="overlay">
+				<div class="home-card-title">
+					Innovators
                 </div>
-                <div class="home-card-text">
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				<div class="home-card-text">
+					The idea champions we work with.
                 </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
+				<div class="tri-arrow-holder">
+					<div class="tri-arrow">
+						&nbsp;
+                    </div>
+				</div>
+				<a href="/innovators"><span class="link-overlay"></span></a>
             </div>
-        </div>
-    </div>
+		</div>
+
+		<div class="home-card">
+            [[{"fid":"3331","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"37":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":400,"width":400,"class":"media-element file-default","data-delta":"37"}}]]
+			<div class="card-gradient">
+				&nbsp;
+            </div>
+			<div class="overlay">
+				<div class="home-card-title">
+					Advisory Committee
+                </div>
+				<div class="home-card-text">
+					We are guided and supported.
+                </div>
+				<div class="tri-arrow-holder">
+					<div class="tri-arrow">
+						&nbsp;
+                    </div>
+				</div>
+                <a href="/advisory-committee"><span class="link-overlay"></span></a>
+			</div>
+		</div>
+	</div>
 </div>
-<!--
-<div class="home-grid-container">
-    <div class="home-grid-2">
-        <div class="home-card">
-[[{"fid":"3201","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"31":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"31"}}]]
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    About
-                </div>
-                <div class="home-card-text">
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-            </div>
-            <a href="/about"><span class="link-overlay"></span></a>
-        </div>
-        <div class="home-card">
-[[{"fid":"3206","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"32":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"33":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"33"}}]]
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Portfolio
-                </div>
-                <div class="home-card-text">
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-                <a href="/portfolio"><span class="link-overlay"></span></a>
-            </div>
-        </div>
-        <div class="home-card">
-[[{"fid":"3211","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"34":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"34"}}]]
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Methodology
-                </div>
-                <div class="home-card-text">
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-                <a href="/methodology"><span class="link-overlay"></span></a>
-            </div>
-        </div>
-        <div class="home-card">
-            <img alt="Cyber Security Internet photo" class="media-element file-default" data-delta="20" data-fid="851" data-media-element="1" src="https://impactstudio.oregonstate.edu/sites/impactstudio.oregonstate.edu/files/cyber_security_internet-3589684_1920_v.2_300.jpg" typeof="foaf:Image" />
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Services
-                </div>
-                <div class="home-card-text">
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-                <a href="/services"><span class="link-overlay"></span></a>
-            </div>
-        </div>
-        <div class="home-card">
-[[{"fid":"3216","view_mode":"default","fields":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""},"type":"media","field_deltas":{"35":{"format":"default","alignment":"","field_file_image_alt_text[und][0][value]":false,"field_file_image_title_text[und][0][value]":false,"external_url":""}},"link_text":null,"attributes":{"height":350,"width":350,"class":"media-element file-default","data-delta":"35"}}]]
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Innovators
-                </div>
-                <div class="home-card-text">
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-                <a href="/innovators"><span class="link-overlay"></span></a>
-            </div>
-        </div>
-        <div class="home-card">
-            <img alt="Cyber Security Internet photo" class="media-element file-default" data-delta="20" data-fid="851" data-media-element="1" src="https://impactstudio.oregonstate.edu/sites/impactstudio.oregonstate.edu/files/cyber_security_internet-3589684_1920_v.2_300.jpg" typeof="foaf:Image" />
-            <div class="card-gradient"></div>
-            <div class="overlay">
-                <div class="home-card-title">
-                    Lorem ipsum
-                </div>
-                <div class="home-card-text">
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </div>
-                <div class="arrow-holder">
-                    <div class="arrow"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
