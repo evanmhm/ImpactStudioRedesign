@@ -1,21 +1,17 @@
-<!-- Makes the parallax overlay text white with no background, use p, h3 and h5 to get this styling -->
+<!-- Makes the parallax overlay text white with a black transparent background, use p, h3 and h5 to get this styling -->
 <style type="text/css">
 
 .eb-parallax .content .field-item {
     background-color: transparent;
 }
 
-.eb-parallax .content .field-item h3 {
-    background-color: transparent;
+.eb-parallax .content .field-item p,
+.eb-parallax .content .field-item h3,
+.eb-parallax .content .field-item h5 {
+    background-color: rgba(0,0,0,0.5);
+    padding: 8px;
+    border-radius: 5px;
     color: white;
 }
 
-.eb-parallax .content .field-item p {
-    background-color: transparent;
-    color: white;
-}
-.eb-parallax .content .field-item h5 {
-    background-color: transparent;
-    color: white;
-}
 </style>
