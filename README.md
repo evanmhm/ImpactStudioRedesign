@@ -9,6 +9,7 @@ These html files are meant to be copied into the paragraphs in the Drupal editor
     - **homeLinks.html**: new links on homepage
     - **staff-testimonial.html**: the staff testimonial boxes in middle of page
     - **goals.html**: old goal boxes on bottom of page
+    - **video.html**: Contains styling, text and the video import for the bottom of the page
 - /InitiativeTeams
     - **(initiative).html**: Contains the team photos for individual initiative pages
     - **TeamStyling.html**: Styling for team photos, pasted on top of initiative pages with teams
